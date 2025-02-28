@@ -1,6 +1,6 @@
 <template>
   <a-extract-style>
-    <a-config-provider :theme="theme">
+    <a-config-provider :theme="theme" :locale="zhCN">
       <div class="container">
 
         <a-date-picker />
@@ -89,6 +89,12 @@
 import { theme as antdTheme } from "ant-design-vue"
 import { reactive, ref} from "#imports";
 import type { CSSProperties } from 'vue';
+import zhCN from 'ant-design-vue/es/locale/zh_CN';
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
+dayjs.locale('zh-cn');
+
+
 const theme = reactive({
   algorithm: antdTheme.defaultAlgorithm
 })

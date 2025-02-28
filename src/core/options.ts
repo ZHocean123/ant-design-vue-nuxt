@@ -31,18 +31,6 @@ export function resolveOptions () {
                 find: /^@ant-design\/icons-vue$/,
                 replacement: '@ant-design/icons-vue',
               },
-              {
-                find: /^dayjs\/plugin\/(.*)$/,
-                replacement: 'dayjs/esm/plugin/$1/index.js',
-              },
-              {
-                find: /^dayjs\/locale/,
-                replacement: 'dayjs/esm/locale',
-              },
-              {
-                find: /^dayjs$/,
-                replacement: 'dayjs/esm',
-              },
             ]
           }
         }
