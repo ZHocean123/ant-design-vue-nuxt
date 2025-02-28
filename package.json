@@ -1,8 +1,8 @@
 {
   "name": "@ant-design-vue/nuxt-ocean",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "ant-design-vue-nuxt module",
-  "repository": "vueComponent/ant-design-vue-nuxt",
+  "repository": "ZHocean123/ant-design-vue-nuxt",
   "license": "MIT",
   "type": "module",
   "exports": {
