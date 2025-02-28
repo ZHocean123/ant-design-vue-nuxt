@@ -33,7 +33,7 @@ export function resolveOptions () {
               },
               {
                 find: /^dayjs\/plugin\/(.*)$/,
-                replacement: 'dayjs/esm/plugin/$1',
+                replacement: 'dayjs/esm/plugin/$1/index.js',
               },
               {
                 find: /^dayjs\/locale/,
