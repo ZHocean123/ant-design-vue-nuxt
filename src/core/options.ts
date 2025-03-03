@@ -30,7 +30,7 @@ export function resolveOptions () {
               {
                 find: /^@ant-design\/icons-vue$/,
                 replacement: '@ant-design/icons-vue',
-              },   
+              },
               {
                 find: /^dayjs(\/.*)?/,
                 replacement: 'dayjs$1',
