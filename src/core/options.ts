@@ -42,10 +42,6 @@ export function resolveOptions () {
                   } else {
                     resolvedPath = source;
                   }
-                  console.log('source', source);
-                  console.log( 'importer', importer);
-                  console.log(  'options',options);
-                  console.log('resolvedPath',resolvedPath)
                   // use Vite's (in fact, rollup's) resolution function
                   return (await this.resolve(resolvedPath))?.id;
                 },
