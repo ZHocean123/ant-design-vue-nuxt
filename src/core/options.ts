@@ -34,7 +34,7 @@ export function resolveOptions () {
               {
                 find: /^dayjs(\/.*)?/,
                 replacement: 'dayjs$1',
-                async customResolver(source, importer, options) {
+                async customResolver(source, importer) {
                   let resolvedPath = "";
                   // check if the import happens inside the package directory
                   if (importer &&  /ant-design-vue[\\/]es/.test(importer)) {
