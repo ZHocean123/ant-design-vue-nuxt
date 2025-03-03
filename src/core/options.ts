@@ -13,8 +13,8 @@ export function resolveOptions () {
       name:"antd-dayjs",
       config(){
         return {
-          resolve:{
-            alias:[
+          resolve: {
+            alias:[ 
                {
                 find: /^(ant-design-vue)(?!\/(es|dist))/,
                 replacement: 'ant-design-vue/es',
@@ -30,6 +30,25 @@ export function resolveOptions () {
               {
                 find: /^@ant-design\/icons-vue$/,
                 replacement: '@ant-design/icons-vue',
+              },   
+              {
+                find: /^dayjs(\/.*)?/,
+                replacement: 'dayjs$1',
+                async customResolver(source, importer, options) {
+                  let resolvedPath = "";
+                  // check if the import happens inside the package directory
+                  if (importer &&  /ant-design-vue[\\/]es/.test(importer)) {
+                    resolvedPath = source.replace(/^dayjs/, 'dayjs/esm');
+                  } else {
+                    resolvedPath = source;
+                  }
+                  console.log('source', source);
+                  console.log( 'importer', importer);
+                  console.log(  'options',options);
+                  console.log('resolvedPath',resolvedPath)
+                  // use Vite's (in fact, rollup's) resolution function
+                  return (await this.resolve(resolvedPath))?.id;
+                },
               },
             ]
           }
