@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.5.2
+
+[compare changes](https://github.com/ZHocean123/ant-design-vue-nuxt/compare/v1.5.0...v1.5.2)
+
+### 🏡 Chore
+
+- **release:** V1.5.1 ([3d38f60](https://github.com/ZHocean123/ant-design-vue-nuxt/commit/3d38f60))
+
+### ❤️ Contributors
+
+- ZHocean123 <youshanghaiyang@gmail.com>
+
 ## v1.5.1
 
 [compare changes](https://github.com/ZHocean123/ant-design-vue-nuxt/compare/v1.5.0...v1.5.1)
